@@ -21,6 +21,7 @@
 
 body {
     background-color: #00D399;
+    min-width: 450px;
 }
 
 .state-description{
@@ -32,12 +33,46 @@ body {
     list-style: square;
 }
 
-.header {
+.navbar {
     text-align: center;
+    background-color: #00D399;
+    min-width: 450px;
 }
 
-.header .title {
+.navbar .title {
     color: white;
     font-size: 50px;
     font-weight: bold;
+}
+
+.navbar .title .small{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*auth*/
+
+#auth-section {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}
+
+#auth-section .auth-url {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#auth-section .auth-url:focus, #auth-section .auth-url:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*content*/
+
+.content-wrapper {
+    margin-top: 72px;
 }
