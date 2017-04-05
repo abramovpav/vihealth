@@ -1,28 +1,28 @@
+body {
+    background-color: #00D399;
+}
+
 .temperature {
-    font-size: 120px;
-    color: white;
+font-size: 120px;
+color: white;
 }
 
 .temperature .celcius {
-    font-size: 70px;
+font-size: 70px;
 }
 
 .red-cross {
-    display: none;
+display: none;
 }
 
 .state-date {
-    color: white;
+color: white;
 }
 
-.state {
+.state .state-left, .state .state-description{
     padding: 10px;
 }
 
-body {
-    background-color: #00D399;
-    min-width: 450px;
-}
 
 .state-description{
     color: #d2ffd2;
