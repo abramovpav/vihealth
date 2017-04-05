@@ -12,5 +12,7 @@ class ViState(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
+    marks = db.relationship('SchoolMark', backref='state')
+
     def __repr__(self):
         return '<ViState {0} {1} C>'.format(self.happened_at, self.temperature)

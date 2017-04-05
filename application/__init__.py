@@ -17,6 +17,7 @@ migrate = Migrate(vihealth_app, db)
 
 
 from application.state.models import ViState
+from application.school_mark.models import SchoolMark
 @vihealth_app.route('/')
 def hello_world():
     print os.path.abspath(os.path.dirname(__file__))
